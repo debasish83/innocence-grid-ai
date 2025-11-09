@@ -1,11 +1,15 @@
 ### Installation
 
 python -m venv .venv
+
 source .venv/bin/activate
+
 pip install -e .
 
 ### Gemini API Key
-Add your gemini API key in ${GEMINI_API_KEY} and use it from .env file
+Add your gemini API key in .env file
+
+### PDF Parser
 
 ## summarize
 pdf-parser summarize ./transcripts/Walker\,\ P74172\,\ 2025-01-29.pdf
