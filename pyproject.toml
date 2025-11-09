@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "innocence-grid-ai"
+version = "0.1.0"
+description = "Parse and analyze PDF files using Google Gemini API"
+authors = [{name="Debasish Das", email="debasish.das83@gmail.com"}]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.9"
+dependencies = [
+  "google-generativeai>=0.5.0",
+  "PyPDF2>=3.0.0",
+  "python-dotenv>=1.0.0",
+  "tqdm>=4.66.0"
+]
+
+[project.scripts]
+pdf-parser = "pdf_parser.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
