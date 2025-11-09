@@ -20,8 +20,5 @@ wheels/
 .installed.cfg
 *.egg
 
-# Environment variables
-.env
-
 # macOS
 .DS_Store
